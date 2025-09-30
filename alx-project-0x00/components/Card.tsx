@@ -3,7 +3,6 @@ import House_Image from "@/public/assets/image/house.png"
 import Star_Image from "@/public/assets/image/star.png"
 import React from 'react'
 import Pill from './Pill'
-import Button from "@/components/button"
 
 
 const Card: React.FC = () => {
@@ -55,13 +54,6 @@ const Card: React.FC = () => {
                         <p className="ml-1 text-[12.95px] font-medium">2-4</p>
                     </div>
                 </div>
-            </div>
-            <div className="bg-gradient-r from-green-200 to-blue-300 ">
-                <Button style="" title="Click me" />
-                <Button style="" title="Click here" />
-                <Button style="" title="disable" />
-                <Button style="bg-gradient-to-r from-green-200 to-blue-500 rounded-full px-3 hover:text-red-400" title="enabled" />
-
             </div>
         </div >
     )
