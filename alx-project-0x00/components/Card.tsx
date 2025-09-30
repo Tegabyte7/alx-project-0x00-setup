@@ -3,11 +3,12 @@ import House_Image from "@/public/assets/image/house.png"
 import Star_Image from "@/public/assets/image/star.png"
 import React from 'react'
 import Pill from './Pill'
+import Button from "@/components/button"
 
 
 const Card: React.FC = () => {
     return (
-        <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ml-40">
+        <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg">
             <Image className="rounded-lg" src={House_Image} width={378.56} height={299.37} alt="house image" />
             <div className="p-2 flex gap-2 mt-2">
                 <Pill title="Top Villa" />
@@ -54,6 +55,13 @@ const Card: React.FC = () => {
                         <p className="ml-1 text-[12.95px] font-medium">2-4</p>
                     </div>
                 </div>
+            </div>
+            <div className="bg-gradient-r from-green-200 to-blue-300 ">
+                <Button style="" title="Click me" />
+                <Button style="" title="Click here" />
+                <Button style="" title="disable" />
+                <Button style="bg-gradient-to-r from-green-200 to-blue-500 rounded-full px-3 hover:text-red-400" title="enabled" />
+
             </div>
         </div >
     )
